@@ -1,0 +1,59 @@
+.common_theme{
+    width: 80%;
+    height: 105px;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.common_theme .network{
+    width: 190px;
+    height: 110px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.25);
+    text-align: center;
+    color: rgba(80, 78, 155, 0.93);
+    font: bold 80px/107px sans-serif;
+    float: left;
+}
+.network{
+    display: inline-block;
+}
+.common_theme .font-anqaun{
+    width: 96px;
+    height: 105px;
+    padding-left: 2px;
+    margin-left: 10px;
+    display: inline-block;
+    background: #4d4e9a;
+    font: 300 40px sans-serif;
+    letter-spacing: 8px;
+    color: rgba(255, 255, 255, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.53);
+    float: left;
+}
+.subtitle{
+    padding-top: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    font: bold 50px sans-serif;
+    margin-left: 30px;
+    letter-spacing: 15px;
+    display: inline-block;
+    float: left;
+}
+.line{
+    width: 100%;
+    clear: both;
+}
+.short-line{
+    width: 90px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.53);
+    display: inline-block;
+}
+.long-line{
+    width: 195px;
+    margin-left: 13px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.53);
+    display: inline-block;
+}

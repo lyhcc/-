@@ -1,0 +1,103 @@
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background:radial-gradient(circle at 200px 500px, #39319b, #5b29a3);
+}
+.law_box{
+    width: 70%;
+    margin-top: 85px;
+    background: rgba(105, 37, 167, 0.81);
+    height: 43em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+#triangle_box {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+}
+#triangle {
+    width: 0;
+    height: 0;
+    border: 110px solid rgba(114, 102, 153, 0.81);
+    border-right: 110px solid transparent;
+    border-bottom: 110px solid transparent;
+}
+#split{
+    position: absolute;
+    top: 220px;
+    left: -30px;
+    width: 100%;
+    height: 30px;
+    transform: rotate(-45deg);
+    transform-origin: left top;
+    background: #422f9d;
+}
+#chapter{
+    width: 100%;
+    font: bold 60px sans-serif;
+    color: rgba(255, 255, 255, 0.54);
+    letter-spacing: 5px;
+    /*transform: rotate(-45deg);
+    position: absolute;
+    top: 60px;
+    left: 40px;*/
+    position: absolute;
+    top: 0px;
+    margin-top: 1em;
+    text-align: center;
+}
+#law_content{
+    width: 70%;
+    height: 7em;
+    margin-top: 5em;
+    font: 600 45px/60px FangSong sans-serif,"Microsoft YaHei UI";
+    color: rgba(255, 255, 255, 0.52);
+    letter-spacing: 0.2em;
+    overflow-y: scroll;
+}
+#law_footer{
+    width: 90%;
+    position: absolute;
+    bottom: 10px;
+}
+#law_footer a{
+    text-decoration: none;
+    font: bold 100px sans-serif;
+    color: rgba(255, 255, 255, 0.52);
+    transform: scale(0.6,1.2);
+}
+#footer_left{
+    float: left;
+}
+#footer_right{
+    float: right;
+}
+#law_footer a:hover{
+    color: rgba(255, 0, 0, 0.65);
+    cursor: pointer;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    /*height: 4px;*/
+}
+#footer2{
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+    text-align: center;
+}
+#footer2 a{
+    color: rgba(101, 78, 255, 0.75);
+}
+#from{
+    font: 200 30px sans-serif,"Microsoft YaHei UI";
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5em;
+}

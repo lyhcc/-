@@ -1,0 +1,128 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>网络安全</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        #output {
+            width: 100%;
+            height: 100%;
+        }
+
+        .color {
+            width: 120px;
+            height: 20px;
+            margin: 0 auto;
+            position: fixed;
+            left: 50%;
+            margin-left: -60px;
+            bottom: 20px;
+        }
+
+        .color li {
+            float: left;
+            margin: 0 5px;
+            width: 20px;
+            height: 20px;
+            background: #ccc;
+            box-shadow: 0 0 4px #FFF;
+            list-style: none;
+            cursor: pointer;
+        }
+
+        .color li:nth-child(1) {
+            background: #002c4a;
+        }
+
+        .color li:nth-child(2) {
+            background: #35ac03;
+        }
+
+        .color li:nth-child(3) {
+            background: #ac0908;
+        }
+
+        .color li:nth-child(4) {
+            background: #18bbff;
+        }
+    </style>
+    <link href="../css/mystyle.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/vector.js"></script>
+    <script>
+        $(function () {
+            // 初始化 传入dom id
+            var victor = new Victor("container", "output");
+
+            var theme = [
+                ["#002c4a", "#005584"],
+                ["#35ac03", "#3f4303"],
+                ["#ac0908", "#cd5726"],
+                ["#18bbff", "#00486b"]
+            ]
+            $(".color li").each(function (index, val) {
+                var color = theme[index];
+                $(this).mouseover(function () {
+                    victor(color).set();
+                })
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="output"></div>
+</div>
+<!--<ul class="color">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>-->
+<div class="theme" id = "ct">
+    <span>网络安全常识</span>
+</div>
+
+<div class="box_tb">
+    <div class="annulus annulus-l">
+        <div class="circle-l">
+            <a href="https://jingyan.baidu.com/article/a3f121e48fc08efc9052bbdb.html">网络安全技巧</a>
+        </div>
+    </div>
+
+    <div class="annulus annulus-m-1">
+        <div class="annulus annulus-m-2">
+                <div class="circle-m">
+                    <a href="./common.html">
+                        <div class="ball">
+                            网络安全小常识
+                        </div>
+                    </a>
+                </div>
+        </div>
+    </div>
+
+    <div class="annulus annulus-r">
+        <div class="circle-l">
+            <a href="./network_law.html">网络安全法</a>
+        </div>
+    </div>
+</div>
+<div class="page_footer">
+    <a href="questionnaire.html">问卷调查</a>
+</div>
+</body>
+</html>
